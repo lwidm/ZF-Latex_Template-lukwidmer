@@ -37,7 +37,7 @@ You can find all my cheat sheets and their source code both on my [github](https
 
 ```LaTeX
 git clone --branch lightweight https://github.com/lwidm/ZF-Latex_Template-lukwidmer.git
-cd eth-cheatsheet-template
+cd ZF-Latex_Template-lukwidmer
 git remote remove origin
 ```
 
