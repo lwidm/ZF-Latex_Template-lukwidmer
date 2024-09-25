@@ -39,12 +39,15 @@ You can find all my cheat sheets and their source code both on my [github](https
 git clone --branch lightweight https://github.com/lwidm/ZF-Latex_Template-lukwidmer.git
 cd ZF-Latex_Template-lukwidmer
 git remote remove origin
+git branch -m main
 ```
-
 - The lightweight branch does not include the entire documentation, instead it links to this README file for instructions.
-
-2. **Change folder and file names** to match your course.
-3. **Update all the comments** like:
+2. Add a **new repo** if needed
+```
+git remote add origin <new-repo-url>
+```
+3. **Change folder and file names** to match your course.
+4. **Update all the comments** like:
 
 ```LaTeX
 %!TEX root = ../ZF-LECTURE_NAME-lukwidmer.tex
