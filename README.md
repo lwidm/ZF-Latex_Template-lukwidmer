@@ -11,6 +11,7 @@ You can find all my cheat sheets and their source code both on my [github](https
 - [Example cheat-sheet](#example-cheat-sheet)
 - [Usage](#usage)
   - [Setup](#setup)
+  - [Update repo using upstream repo](#update-repo-using-upstream-repo)
   - [Custom Commands](#custom-commands)
     - [`\DocumentInfo`](#\documentinfo[background_color]{document_title}{additional_info}{main_content})
     - [`\mySection`](#\mysection[background_color]{section_title})
@@ -34,25 +35,35 @@ You can find all my cheat sheets and their source code both on my [github](https
 ### Setup
 
 1. **Fork this repository** (or clone it and remove the origin remote).
-
 ```LaTeX
 git clone --branch lightweight https://github.com/lwidm/ZF-Latex_Template-lukwidmer.git
 cd ZF-Latex_Template-lukwidmer
 git remote remove origin
+git branch -m main
 ```
-
 - The lightweight branch does not include the entire documentation, instead it links to this README file for instructions.
-
-2. **Change folder and file names** to match your course.
-3. **Update all the comments** like:
-
+2. **Add the upstream repo** as a remote i.e. this repo
+```PowerShell
+git remote add upstream https://github.com/lwidm/ZF-Latex_Template-lukwidmer
+```
+3. **Change folder and file names** to match your course.
+4. Add a **new repo** if needed
+```PowerShell
+git remote add origin <new-repo-url>
+```
+5. **Update all the comments** like:
 ```LaTeX
 %!TEX root = ../ZF-LECTURE_NAME-lukwidmer.tex
 ```
-
 These comments are located at the top of every chapter file, the header and the root file. Ensure they reflect your updated folder and file structure.
 
-4. Add your content and compile the LaTeX document as needed!
+6. Add your content and compile the LaTeX document as needed!
+
+### Update repo using upstream repo
+To update the current repository using the upstream [https://github.com/lwidm/ZF-Latex_Template-lukwidmer](https://github.com/lwidm/ZF-Latex_Template-lukwidmer) you need to run:
+```PowerShell
+git pull upstream lightweight
+```
 
 ### Custom Commands
 
