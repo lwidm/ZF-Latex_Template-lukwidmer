@@ -5,6 +5,9 @@
 *.out
 *.gz
 *.pdf
+*.synctex
+*.synctex(busy)
+*.synctex.gz.sum.synctex
 
 00_header/*.aux
 00_header/*.fdb_latexmk
