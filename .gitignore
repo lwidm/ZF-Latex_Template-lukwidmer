@@ -8,6 +8,7 @@
 *.synctex
 *.synctex(busy)
 *.synctex.gz.sum.synctex
+*.toc
 
 00_header/*.aux
 00_header/*.fdb_latexmk
