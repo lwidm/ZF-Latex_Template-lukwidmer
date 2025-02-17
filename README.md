@@ -36,8 +36,8 @@ You can find all my cheat sheets and their source code both on my [github](https
 
 1. **Fork this repository** (or clone it and remove the origin remote).
 ```LaTeX
-git clone --branch lightweight --depth 1 https://github.com/lwidm/ZF-Latex_Template-lukwidmer.git
-cd ZF-Latex_Template-lukwidmer
+git clone --branch lightweight --depth 1 https://github.com/lwidm/ZF-Latex_Template-lukwidmer.git /path/to/new/ZF/directory/ZF-LECTURE_NAME-lukwidmer
+cd /path/to/new/ZF/directory/ZF-LECTURE_NAME-lukwidme
 git remote remove origin
 git branch -m main
 ```
